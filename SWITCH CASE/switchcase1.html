@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coba switch case</title>
+  </head>
+  <body>
+    <script>
+      var nilai = prompt("Masukan nilai yaaa");
+      var grade = "";
+
+      switch (true) {
+        case nilai >= 90:
+          grade = "Nilai A";
+          break;
+        case nilai >= 80:
+          grade = "Nilai B";
+          break;
+        case nilai >= 70:
+          grade = "Nilai C";
+          break;
+        case nilai >= 60:
+          grade = "Nilai D";
+          break;
+        case nilai >= 50:
+          grade = "Nilai E ";
+          break;
+        default:
+          document.write("Nilai F.. Tetap Semangat");
+      }
+
+      if (grade === "") {
+        document.write("<p>Coba belajar lebih giat lagiii yach</p>");
+      } else {
+        document.write("<h2>Hasil  " + grade + "</h2>");
+      }
+    </script>
+  </body>
+</html>
